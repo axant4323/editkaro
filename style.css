@@ -1,0 +1,103 @@
+/* Custom Font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Theme variables */
+:root {
+    --bg-color-dark: #0a0a0a;
+    --text-color-dark: #e2e8f0;
+    --accent-color-dark: #1f2937;
+    --glow-color: rgba(168, 85, 247, 0.15); /* Purple glow */
+    
+    --bg-color-light: #f3f4f6;
+    --text-color-light: #111827;
+    --accent-color-light: #ffffff;
+}
+
+/* Base body styles */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Apply mouse-following glow effect to both themes */
+    background-image: radial-gradient(circle 400px at var(--mouse-x) var(--mouse-y), var(--glow-color), transparent 80%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Dark theme styles (default) */
+body {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Light theme styles */
+body.light-theme {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+.navbar {
+    background-color: var(--accent-color-dark);
+    transition: background-color 0.3s ease;
+}
+
+body.light-theme .navbar {
+    background-color: var(--accent-color-light);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+body.light-theme .nav-link,
+body.light-theme .text-2xl {
+    color: #374151;
+}
+body.light-theme .nav-link:hover {
+    color: #a855f7; /* Purple */
+}
+
+body.light-theme .video-card, body.light-theme .contact-form-container {
+     background-color: #ffffff;
+}
+
+body.light-theme .video-card .p-5, body.light-theme .contact-form-container, body.light-theme label {
+    color: #111827;
+}
+
+body.light-theme h1, body.light-theme h2, body.light-theme h3, body.light-theme h4 {
+    color: #111827;
+}
+
+body.light-theme .text-slate-400 {
+    color: #4b5563;
+}
+
+body.light-theme .form-input, body.light-theme .form-textarea {
+    background-color: #e5e7eb;
+    border-color: #d1d5db;
+    color: #111827;
+}
+
+/* Video card hover effect */
+.video-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.video-card video {
+    width: 100%;
+    height: 12rem; /* 192px */
+    object-fit: cover;
+}
+
+/* Filter button styling */
+.filter-btn {
+    transition: all 0.2s ease-in-out;
+}
+.filter-btn.active {
+    background-color: #a855f7; /* Purple */
+    color: white;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+}
+

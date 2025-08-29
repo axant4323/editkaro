@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header and Navigation -->
+    <header class="navbar sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                 <svg class="h-8 w-8 text-purple-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <h1 class="text-2xl font-bold">Editkaro.in</h1>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="nav-link text-gray-300 hover:text-purple-500 transition">Portfolio</a>
+                <a href="about.html" class="nav-link text-gray-300 hover:text-purple-500 transition">About</a>
+                <a href="contact.html" class="nav-link text-gray-300 hover:text-purple-500 transition">Contact</a>
+            </div>
+            <button id="theme-toggle" class="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                <svg id="theme-icon-sun" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                <svg id="theme-icon-moon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-8">About Editkaro.in</h2>
+            <div class="prose prose-lg lg:prose-xl max-w-none mx-auto text-slate-400">
+                <p>Founded in 2020, Editkaro.in was born from a passion for visual storytelling. We saw a gap in the market for a video editing agency that not only possessed technical skill but also a deep understanding of social media trends and audience engagement. Today, we are a thriving creative hub, helping brands and creators across the globe turn their raw footage into polished, compelling narratives.</p>
+                <p>Our mission is simple: to create unforgettable video content that stops the scroll. We believe that every video, whether it's a 15-second TikTok clip or a 20-minute documentary, has the power to inform, entertain, and inspire. We combine cutting-edge editing techniques with strategic marketing insights to ensure your content not only looks amazing but also achieves your goals.</p>
+                <h3 class="text-2xl font-bold mt-12 mb-4 text-white">Our Team</h3>
+                <p>Our team is a diverse group of passionate editors, animators, colorists, and social media strategists. With backgrounds in film, marketing, and gaming, we bring a unique blend of creativity and analytical thinking to every project. We are constantly learning and adapting to the ever-changing digital landscape to keep our clients ahead of the curve.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
